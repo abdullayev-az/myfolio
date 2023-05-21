@@ -16,7 +16,7 @@
     }
     .nav-offcanvas{
         display: block;
-        position: absolute;
+        position: fixed;
         top: 0;
         right: 0;
         bottom: 0;
@@ -56,8 +56,11 @@
         color: #fff;
         font-size: 1.8em;
     }
-    .offcanvas-body .nav-buton button{
-        padding: 10px 20px;
+    .offcanvas-body .nav-buton{
+        text-align: center;
+    }
+    .offcanvas-body .nav-buton a{
+    padding: 10px 20px;
     background-color: transparent;
     border: 1px solid #fff;
     color: #fff;
@@ -69,8 +72,9 @@
     position: relative;
     overflow: hidden;
     z-index: 1;
+    text-decoration: none;
     }
-    .offcanvas-body .nav-buton button::before{
+    .offcanvas-body .nav-buton a::before{
         content: "";
         position: absolute;
         left: 0;
@@ -91,7 +95,7 @@
         -o-transition: 0.3s;
         z-index: -1;
     }
-    .offcanvas-body .nav-buton button:hover::before{
+    .offcanvas-body .nav-buton a:hover::before{
         opacity: 1;
         transform: translateY(0);
         -webkit-transform: translateY(0);
@@ -99,7 +103,7 @@
         -ms-transform: translateY(0);
         -o-transform: translateY(0);
     }
-    .offcanvas-body .nav-buton button:hover{
+    .offcanvas-body .nav-buton a:hover{
         color: #8546e6;
     }
     .offcanvas-footer{
@@ -171,6 +175,9 @@
     .contact-main h1{
         font-size: 2.8em;
     }
+    .sidebar .projects-main{
+        width: 60%;
+    }
     
 }
 
@@ -211,6 +218,14 @@
     .contact-main h1{
         font-size: 2em;
     }
+    .sidebar .projects-main{
+        width: 60%;
+    }
+    .sidebar .projectbars{
+        height: 60vh;
+    }
+
+
 }
 
 @media only screen and (max-width: 576px) {
@@ -274,4 +289,24 @@
     .contact-main p{
         font-size: 0.9em;
     }
+    .sidebar .projects-main{
+        width: 80%;
+    }
+    .sidebar .projectbars{
+        height: 55vh;
+        padding: 10px;
+    }
+    .sidebar .projectbars .projectone a{
+        font-size: 0.8em;
+        padding: 5px 10px;
+    }
+
+
+
 }
+@media only screen and (max-width: 400px) {
+    .sidebar .projectbars{
+        height: 40vh;
+    }
+}
+
