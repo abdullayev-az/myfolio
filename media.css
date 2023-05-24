@@ -224,6 +224,15 @@
     .sidebar .projectbars{
         height: 60vh;
     }
+    .chatbox {
+        width: 300px;
+    }
+    .chatbox:hover{
+        width: 330px;
+    }
+    .contents{
+        bottom: -40px;
+    }
 
 
 }
@@ -299,6 +308,22 @@
     .sidebar .projectbars .projectone a{
         font-size: 0.8em;
         padding: 5px 10px;
+    }
+    .chatbox {
+        width: 230px;
+    }
+    .chatbox:hover{
+        width: 250px;
+    }
+    .chatbox .headerr .profil img{
+        width: 45px;
+        height: 45px;
+    }
+    .contents{
+        bottom: -100px;
+    }
+    .msg-btn p {
+        padding: 5px 15px;
     }
 
 
