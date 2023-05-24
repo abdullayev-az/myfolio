@@ -10,24 +10,26 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"> 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
     <title>Taleh's portifolio</title>
 </head>
 <body>
     <section class="header" id="home">
-        <div class="container-fluid"  style="position: relative;z-index: 11;">
+        <div class="container-fluid"  style="position: relative;z-index: 11;" data-aos="fade-down" data-aos-offset="200" data-aos-easing="ease-in-out" data-aos-duration="1000">
             <div class="nav-bar" >
-                <div class="nav-logo" >LOGO</div>
+                <div class="nav-logo" >FOLIO<span>.</span></div>
                 <div class="nav-texts">
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#portifolios">Portifolios</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#home" class="navbar-home">Home</a></li>
+                        <li><a href="#services" class="navbar-service">Services</a></li>
+                        <li><a href="#portifolios" class="navbar-projects">Projects</a></li>
+                        <li><a href="#about" class="navbar-about">About</a></li>
+                        <li><a href="#contact" class="navbar-contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="nav-buton">
-                    <a href="imgs/Taleh Abdullayev.pdf">Download CV</a>
+                    <a href="imgs/Taleh Abdullayev.pdf" class="navbar-button">Download CV</a>
                 </div>
                 <div class="hamburger">
                     <div></div>
@@ -43,14 +45,14 @@
             <hr>
             <div class="offcanvas-body">
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portifolios">Portifolios</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#home" class="navbar-home">Home</a></li>
+                    <li><a href="#services" class="navbar-service">Services</a></li>
+                    <li><a href="#portifolios" class="navbar-projects">Projects</a></li>
+                    <li><a href="#about" class="navbar-about">About</a></li>
+                    <li><a href="#contact" class="navbar-contact">Contact</a></li>
                 </ul>
                 <div class="nav-buton">
-                    <a href="imgs/Taleh Abdullayev.pdf" class=" col-12">Download CV</a>
+                    <a href="imgs/Taleh Abdullayev.pdf" class=" col-12 navbar-button">Download CV</a>
                 </div>
             </div>
             <hr style="margin: 0;">
@@ -62,34 +64,34 @@
             </div>
         </div>
         <main>
-            <div class="main-img">
-                <img src="imgs/team-3.jpg" alt="">
+            <div class="main-img" data-aos="fade-right" data-aos-offset="10" data-aos-easing="ease-in" data-aos-duration="1000">
+                <!-- <img src="imgs/team-3.jpg.jpg" alt=""> -->
             </div>
-            <div class="main-texts">
-                <h1>Hello this is Taleh</h1>
-                <p>Web Designer</p>
+            <div class="main-texts" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-out" data-aos-duration="1000">
+                <h1 class="maintop-text">Hello I'am Taleh</h1>
+                <p class="mainbottom-text">Web Designer</p>
             </div>
         </main>
     </section>
     <section class="servicepage" id="services">
         <div class="container-fluid service-main">
-            <h4>SERVICES</h4>
-        <p>Build brands campaigns <br> & digital projects</p>
+            <h4 class="service-title">SERVICES</h4>
+        <p class="service-about">Build brands campaigns <br> & digital projects</p>
         <div class="service-items">
-            <div class="item">
+            <div class="item" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-out" data-aos-duration="1000">
                 <img src="imgs/web1.gif" alt="">
-                <h1>Graphic design</h1>
-                <p>We prepare your website with the most modern design, new ideas and present it to you!</p>
+                <h1 class="title1">Graphic design</h1>
+                <p class="about1">We prepare your website with the most modern design, new ideas and present it to you!</p>
             </div>
-            <div class="item">
+            <div class="item" data-aos="fade-down" data-aos-offset="200" data-aos-easing="ease-in-out" data-aos-duration="1000">
                 <img src="imgs/web2.gif" alt="">
-                <h1>Web design</h1>
-                <p>We make the most popular programs used in the world and add color to your taste!</p>
+                <h1 class="title2">Web design</h1>
+                <p class="about2">We make the most popular programs used in the world and add color to your taste!</p>
             </div>
-            <div class="item">
+            <div class="item" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-out" data-aos-duration="1000">
                 <img src="imgs/web3.gif" alt="">
-                <h1>Mobile App</h1>
-                <p>Service with more than 3 years of experience! We provide quality work to customers and companies.</p>
+                <h1 class="title3">Mobile App</h1>
+                <p class="about3">Service with more than 3 years of experience! We provide quality work to customers and companies.</p>
             </div>
         </div>
         </div>
@@ -97,15 +99,18 @@
     <section class="projectspage" id="portifolios">
         <div class="container-fluid">
             <div class="projects">
-                <h4>PORTIFOLIOS</h4>
-                <P>Some of my awesome <br> stuffs here</P>
+                <h4 class="projects-title">PROJECTS</h4>
+                <P class="projects-about">Some of my awesome <br> stuffs here</P>
                 <div class="projects-items">
-                    <div class="projects-item item1"></div>
-                    <div class="projects-item item2"></div>
-                    <div class="projects-item item3"></div>
-                    <div class="projects-item item4"></div>
-                    <div class="projects-item item5"></div>
+                    <div class="projects-item item1" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-out"   data-aos-duration="1000" ></div>
+                    <div class="projects-item item2" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-out" data-aos-duration="1000" ></div>
+                    <div class="projects-item item3" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-out" data-aos-duration="1000"></div>
+                    <div class="projects-item item4" data-aos="fade-down" data-aos-offset="200" data-aos-easing="ease-in-out" data-aos-duration="1000"></div>
+                    <div class="projects-item item5" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-out" data-aos-duration="1000"></div>
                 </div>
+            </div>
+            <div class="more-projects text-center">
+                <button class="more-folio">More folio</button>
             </div>
         </div>
     </section>
@@ -113,12 +118,12 @@
         <div class="container-fluid">
             <div class="about-main">
                 <div class="about-texts">
-                    <h1>About Me</h1>
-                    <p>Since 2020, I have been working in the field of IT Front-end Developer and mastering my knowledge. I have developed many websites and programs and brought myself to the level of Front-end (Full-stack) Developer. More details in CV!</p>
-                    <a href="imgs/Taleh Abdullayev.pdf">Download CV</a>
-                </div>
-                <div class="about-img">
-                    <img src="imgs/about.png.webp" alt="">
+                    <h1 class="about-title">About Me</h1>
+                    <p class="about-p">Since 2020, I have been working in the field of IT Front-end Developer and mastering my knowledge. I have developed many websites and programs and brought myself to the level of Front-end (Full-stack) Developer. More details in CV!</p>
+                    <a href="imgs/Taleh Abdullayev.pdf" class="navbar-button">Download CV</a>
+                </div> 
+                <div class="about-img"  data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-out"   data-aos-duration="1000">
+                    <img src="imgs/about.png.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -128,15 +133,15 @@
             <div class="counter-main">
               <div class="counter-box" >
                 <h1><span class="counter">13</span></h1>
-                <h5>Total</h5>
+                <h5 class="total">Total</h5>
               </div> 
-              <div class="counter-box">
+              <div class="counter-box" >
                 <h1><span class="counter">2</span></h1>
-                <h5>On Going Projects</h5>
+                <h5 class="going">On Going Projects</h5>
               </div>
               <div class="counter-box">
                 <h1><span class="counter">9</span></h1>
-                <h5>Job Succes</h5>
+                <h5 class="succes">Job Succes</h5>
               </div>
             </div>
           </div>
@@ -144,9 +149,9 @@
     <section class="contact" id="contact" >
         <div class="container-fluid">
             <div class="contact-main">
-                <h1>Let’s discuss for a project</h1>
-                <p>If you have any project, contact me now and let's discuss</p>
-                <button class="talk" >Start Talking</button>
+                <h1 class="contact-title">Let’s discuss for a project</h1>
+                <p class="contact-p">If you have any project, contact me now and let's discuss</p>
+                <button class="talk" id="change" onclick="togglebutton()" >Start Talking</button>
                 <div class="social-icon">
                     <a href="https://www.facebook.com/taleh.abdullayev.5876" target="_blank"><img src="imgs/facebook.png" alt=""></a>
                     <a href="https://www.instagram.com/theabdullayefff/" target="_blank"><img src="imgs/instagram.png" alt=""></a>
@@ -165,42 +170,74 @@
             <div class="projectbars bank">
                 <div class="projectone">
                     <img src="imgs/pc-mybank.png" alt="">
-                    <a href="https://abdullayev-az.github.io/MyBank/" target="_blank">Live Demo</a>
+                    <a href="https://abdullayev-az.github.io/MyBank/" target="_blank" class="livedemo">Live Demo</a>
                 </div>
             </div>
             <div class="projectbars course">
                 <div class="projectone">
                     <img src="imgs/pc-melodra.png" alt="">
-                    <a href="https://abdullayev-az.github.io/MelaDora/" target="_blank">Live Demo</a>
+                    <a href="https://abdullayev-az.github.io/MelaDora/" target="_blank" class="livedemo">Live Demo</a>
                 </div>
             </div>
             <div class="projectbars cargo">
                 <div class="projectone">
                     <img src="imgs/pc-seda.png" alt="">
-                    <a href="https://abdullayev-az.github.io/seda-esas/" target="_blank">Live Demo</a>
+                    <a href="https://abdullayev-az.github.io/seda-esas/" target="_blank" class="livedemo">Live Demo</a>
                 </div>
             </div>
             <div class="projectbars cargo">
                 <div class="projectone">
                     <img src="imgs/pc-garanti.png" alt="">
-                    <a href="https://abdullayev-az.github.io/garanti.az/" target="_blank">Live Demo</a>
+                    <a href="https://abdullayev-az.github.io/garanti.az/" target="_blank" class="livedemo">Live Demo</a>
                 </div>
             </div>
             <div class="projectbars mall">
                 <div class="projectone">
                     <img src="imgs/pc-deniz.png" alt="">
-                    <a href="https://abdullayev-az.github.io/deniz-mall/" target="_blank">Live Demo</a>
+                    <a href="https://abdullayev-az.github.io/deniz-mall/" target="_blank" class="livedemo">Live Demo</a>
                 </div>
             </div>
             <div class="projectbars shop">
                 <div class="projectone">
                     <img src="imgs/pc-fashion.png" alt="">
-                    <a href="https://abdullayev-az.github.io/Male_fashion/" target="_blank">Live Demo</a>
+                    <a href="https://abdullayev-az.github.io/Male_fashion/" target="_blank" class="livedemo">Live Demo</a>
                 </div>
             </div>
         </div>
     </section>
-    
+    <div class="chatbox">
+            <div class="headerr">
+              <div class="profil">                  
+                  <img src="imgs/about.png.jpg" alt="">    
+                  <p id="pfpname">Taleh</p>  
+              </div>
+          
+            </div>
+          
+            <div class="contents">
+              <div style="padding:11px;">
+          
+                <div class="msg-btn-holder">
+                  <div class="receiver-msg msg-btn">
+                    <p class="help">How can I help you?</p>
+                  </div><br><br><br>
+                </div>
+          
+              </div>
+          
+            </div>
+            <div class="footer">
+              <div style="width:100%;padding:11px;">
+                <input placeholder="Message" class="text-box" name="message">
+                <div class="send-ico">
+                  <img src="imgs/send.png" alt="">
+                </div>
+          
+              </div>
+          
+            </div>
+    </div>
+
     
 
 
@@ -214,6 +251,8 @@
     <script src='//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js'></script>
     <script src='https://cdn.jsdelivr.net/jquery.counterup/1.0/jquery.counterup.min.js'></script>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script src="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
