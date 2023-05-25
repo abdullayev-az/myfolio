@@ -221,6 +221,9 @@
     .sidebar .projects-main{
         width: 0%;
     }
+    .sidebar .empty-click{
+        width: 40%;
+    }
     .sidebar .projectbars{
         height: 60vh;
     }
@@ -233,6 +236,9 @@
     .contents{
         bottom: -40px;
     }
+    .sidebar .projects-main::-webkit-scrollbar {
+    width: 10px;
+  }
 
 
 }
@@ -304,6 +310,9 @@
     .sidebar .projectbars{
         height: 55vh;
         padding: 10px;
+    }
+    .sidebar .empty-click{
+        width: 20%;
     }
     .sidebar .projectbars .projectone a{
         font-size: 0.8em;
