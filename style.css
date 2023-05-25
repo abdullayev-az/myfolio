@@ -732,7 +732,7 @@ main .main-texts p::before{
     color: #8546e6;
     font-size: 4em;
     font-weight: bold;
-    text-shadow: 0 5px rgb(10, 9, 9);
+    text-shadow: 0 5px #fff;
 }
 .contact-main p{
     color: #ffffff80;
