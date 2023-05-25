@@ -838,6 +838,12 @@ main .main-texts p::before{
     padding-top: 50px;
     overflow-y: scroll;
 }
+.sidebar .empty-click{
+    width: 60%;
+    height: 100%;
+    background-color:transparent;
+    position: relative;
+}
 /* width */
 .sidebar .projects-main::-webkit-scrollbar {
     width: 20px;
