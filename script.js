@@ -72,6 +72,18 @@ $('.barclose').click(function(){
         width: "0%",
         ease: Expo.easeOut
      }, 0.2)
+});
+$('.empty-click').click(function(){
+    $('.sidebar').fadeOut();
+    $('html').css({'overflow-y':'scroll'});
+    TweenMax.to(".sidebar", 1.5, {
+        width: "0%",
+        ease: Expo.easeInOut
+     }, 0.2)
+     TweenMax.to(".projects-main", 1, {
+        width: "0%",
+        ease: Expo.easeOut
+     }, 0.2)
 })
 
 
