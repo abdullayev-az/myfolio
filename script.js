@@ -18,48 +18,24 @@ $('.counter').counterUp({
 })
 $('.item1').click(function(){
     $('.sidebar').fadeIn();
-    $('html').css({'overflow-y':'hidden'});
-    $('.bank').css({'display':'block'});
-    $('.course').css({'display':'none'});
-    $('.cargo').css({'display':'none'});
-    $('.mall').css({'display':'none'});
-    $('.shop').css({'display':'none'});
+    $('.projects-main').html("<div class='projectbars bank'><div class='projectone'><img src='imgs/pc-mybank.png'><a href='https:abdullayev-az.github.io/MyBank/' target='_blank' class='livedemo'>Live Demo</a></div></div>");
 })
 $('.item2').click(function(){
     $('.sidebar').fadeIn();
-    $('html').css({'overflow-y':'hidden'});
-    $('.course').css({'display':'block'});
-    $('.bank').css({'display':'none'});
-    $('.cargo').css({'display':'none'});
-    $('.mall').css({'display':'none'});
-    $('.shop').css({'display':'none'});
+    $('.projects-main').html("<div class='projectbars'><div class='projectone'><img src='imgs/pc-melodra.png'><a href='https:abdullayev-az.github.io/MelaDora/' target='_blank' class='livedemo'>Live Demo</a></div></div>");
 })
 $('.item3').click(function(){
     $('.sidebar').fadeIn();
-    $('html').css({'overflow-y':'hidden'});
-    $('.cargo').css({'display':'block'});
-    $('.bank').css({'display':'none'});
-    $('.course').css({'display':'none'});
-    $('.mall').css({'display':'none'});
-    $('.shop').css({'display':'none'});
+    $('.projects-main').html("<div class='projectbars'><div class='projectone'><img src='imgs/pc-seda.png'><a href='https:abdullayev-az.github.io/seda-esas/' target='_blank' class='livedemo'>Live Demo</a></div></div><div class='projectbars'><div class='projectone'><img src='imgs/pc-garanti.png'><a href='https:abdullayev-az.github.io/garanti.az/' target='_blank' class='livedemo'>Live Demo</a></div></div>");
 })
 $('.item4').click(function(){
     $('.sidebar').fadeIn();
-    $('html').css({'overflow-y':'hidden'});
-    $('.mall').css({'display':'block'});
-    $('.bank').css({'display':'none'});
-    $('.course').css({'display':'none'});
-    $('.cargo').css({'display':'none'});
-    $('.shop').css({'display':'none'});
+        $('.projects-main').html("<div class='projectbars'><div class='projectone'><img src='imgs/pc-garanti.png'><a href='https:abdullayev-az.github.io/garanti.az/' target='_blank' class='livedemo'>Live Demo</a></div></div>");
 })
 $('.item5').click(function(){
     $('.sidebar').fadeIn();
-    $('html').css({'overflow-y':'hidden'});
-    $('.shop').css({'display':'block'});
-    $('.bank').css({'display':'none'});
-    $('.course').css({'display':'none'});
-    $('.cargo').css({'display':'none'});
-    $('.mall').css({'display':'none'});
+        $('.projects-main').html("<div class='projectbars'><div class='projectone'><img src='imgs/pc-deniz.png'><a href='https:abdullayev-az.github.io/deniz-mall/ target='_blank' class='livedemo'>Live Demo</a></div></div><div class='projectbars'><div class='projectone'><img src='imgs/pc-fashion.png'><a href='https:abdullayev-az.github.io/Male_fashion/ target='_blank' class='livedemo'>Live Demo</a></div></div>");
+  
 })
 $('.barclose').click(function(){
     $('.sidebar').fadeOut();
@@ -72,7 +48,7 @@ $('.barclose').click(function(){
         width: "0%",
         ease: Expo.easeOut
      }, 0.2)
-});
+})
 $('.empty-click').click(function(){
     $('.sidebar').fadeOut();
     $('html').css({'overflow-y':'scroll'});
