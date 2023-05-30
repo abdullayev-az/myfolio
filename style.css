@@ -295,15 +295,14 @@ main .main-texts p::before{
 .service-items{
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    gap: 10px;
     margin-top: 40px;
 }
 .service-items .item{
-    width: 350px;
     padding: 20px;
     text-align: center;
     border: 0.5px solid rgba(128, 128, 128, 0.297);
-    margin: 20px;
     transition: 0.4s;
     -webkit-transition: 0.4s;
     -moz-transition: 0.4s;
@@ -360,10 +359,32 @@ main .main-texts p::before{
     font-size: 3.5em;
     color: #fff;
 }
+.item1 {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+  
+  .item2 {
+    grid-column: 3 / span 2;
+    grid-row: 1;
+  }
+  
+  .item3 {
+    grid-column: 1 / span 1;
+    grid-row: 2;
+  }
+  
+  .item4 {
+    grid-column: 3 / span 0;
+    grid-row: 2;
+  }
+  
+  .item5 {
+    grid-column: 2 / span 2;
+    grid-row: 2;
+  }
 .projects-items{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
     grid-gap: 20px;
 }
 .projects-items button{
@@ -393,7 +414,7 @@ main .main-texts p::before{
     -o-transition: 0.4s;
 }
 .item1{
-    width: 40%;
+
     background-image: url(imgs/application.webp);
     background-size: cover;
     background-position: center;
@@ -421,7 +442,7 @@ main .main-texts p::before{
     cursor: pointer;
 }
 .item2{
-    width: 57%;
+
     background-image: url(imgs/course.webp);
     background-size: cover;
     background-position: center;
@@ -449,7 +470,7 @@ main .main-texts p::before{
     cursor: pointer;
 }
 .item3{
-    width: 30%;
+
     background-image: url(imgs/cargo.webp);
     background-size: cover;
     background-position: center;
@@ -477,7 +498,7 @@ main .main-texts p::before{
     cursor: pointer;
 }
 .item4{
-    width: 20%;
+
     background-image: url(imgs/mall.jpeg);
     background-size: cover;
     background-position: center;
@@ -505,7 +526,6 @@ main .main-texts p::before{
     cursor: pointer;
 }
 .item5{
-    width: 45%;
     background-image: url(imgs/shop.webp);
     background-size: cover;
     background-position: center;
@@ -732,7 +752,8 @@ main .main-texts p::before{
     color: #8546e6;
     font-size: 4em;
     font-weight: bold;
-    text-shadow: 0 5px #fff;
+    text-shadow: 0 5px rgb(255, 255, 255) ,
+    0 5px 10px rgb(14, 12, 12);
 }
 .contact-main p{
     color: #ffffff80;
@@ -827,15 +848,16 @@ main .main-texts p::before{
     width: 0;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.897);
-    z-index: 10000;
-    display: none;
+    z-index: 1000;
+    display: flex;
 }
 .sidebar .projects-main{
-    width: 00%;
+    width: 0%;
     height: 100%;
     background-color:#8546E6;
     position: relative;
     padding-top: 50px;
+    z-index: 1001;
     overflow-y: scroll;
 }
 .sidebar .empty-click{
@@ -1049,13 +1071,13 @@ main .main-texts p::before{
     border: 1px solid rgba(255, 255, 255, 0.6);
     background: none;
     padding: 8px 10px;
-    width: 65%;
+    width: 100%;
     outline: none;
     color: #fff;
     transition: transform 1s ease, width 1s ease;
   }
   .text-box:hover {
-    width: 75%;
+    width: 100%;
   }
   
   .send-ico {
@@ -1128,5 +1150,4 @@ main .main-texts p::before{
     }
   }
   
-  
-
+ 
