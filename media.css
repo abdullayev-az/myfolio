@@ -155,17 +155,8 @@
     }
     .service-items .item{
         padding: 10px;
-        margin: 10px;
     }
-    .item3{
-        width: 60%;
-    }
-    .item4{
-        width: 37%;
-    }
-    .item5{
-        width: 100%;
-    }
+
     .aboutpage .about-main .about-img::before{
         top: -100px;
     }
@@ -196,12 +187,6 @@
     .service-items .item{
         width: 100%;
         margin: 10px 0;
-    }
-    .projects-item{
-        width: 48%;
-    }
-    .item5{
-        width: 100%;
     }
     .aboutpage .about-main{
         margin-top: 8em;
@@ -236,9 +221,30 @@
     .contents{
         bottom: -40px;
     }
-    .sidebar .projects-main::-webkit-scrollbar {
-    width: 10px;
-  }
+    .item1 {
+        grid-column: 1 / span 2;
+        grid-row: 1;
+      }
+      
+      .item2 {
+        grid-column: 3 / span 2;
+        grid-row: 1;
+      }
+      
+      .item3 {
+        grid-column: 1 / span 2;
+        grid-row: 2;
+      }
+      
+      .item4 {
+        grid-column: 3 / span 2;
+        grid-row: 2;
+      }
+      
+      .item5 {
+        grid-column: 1 / span 4;
+        grid-row: 3;
+      }
 
 
 }
@@ -307,12 +313,12 @@
     .sidebar .projects-main{
         width: 0%;
     }
+    .sidebar .empty-click{
+        width: 20%;
+    }
     .sidebar .projectbars{
         height: 55vh;
         padding: 10px;
-    }
-    .sidebar .empty-click{
-        width: 20%;
     }
     .sidebar .projectbars .projectone a{
         font-size: 0.8em;
@@ -334,6 +340,30 @@
     .msg-btn p {
         padding: 5px 15px;
     }
+    .item1 {
+        grid-column: 1 / span 3;
+        grid-row: 1;
+      }
+      
+      .item2 {
+        grid-column: 1 / span 3;
+        grid-row: 2;
+      }
+      
+      .item3 {
+        grid-column: 1 / span 3;
+        grid-row: 3;
+      }
+      
+      .item4 {
+        grid-column: 1 / span 3;
+        grid-row: 4;
+      }
+      
+      .item5 {
+        grid-column: 1 / span 3;
+        grid-row: 5;
+      }
 
 
 
